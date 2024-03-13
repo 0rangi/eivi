@@ -1,5 +1,5 @@
 import { Dispatch, SetStateAction, useState } from 'react'
-import { Slide1 } from './src/screens/Slide1'
+import { Slide2 } from './src/screens/Slide2'
 import { StyleSheet, Text, View } from 'react-native';
 import { useFonts, PaytoneOne_400Regular } from '@expo-google-fonts/paytone-one';
 
@@ -19,7 +19,7 @@ export default function App() {
     return null
   }
   return (
-    <Slide1 setPage=(setPage) />
+    <Slide2 />
   );
 }
 

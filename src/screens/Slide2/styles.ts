@@ -11,19 +11,17 @@ props: {
 },
 
 text: {
-
+marginTop:60,
 fontFamily: 'PaytoneOne_400Regular',
 fontSize: 30,
 textAlign: 'center',
-color:"#020646"
+color:"#ffffff"
 },
 
-img1:
+view:
 {
-    width:288,
-    height:288,
-   marginTop:70,
-   marginBottom: 30,
+
+   
 }
 
 })

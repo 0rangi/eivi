@@ -10,20 +10,17 @@ export function Slide1() {
     return (
         <ImageBackground style={styles.container} source={slide} >
 
-            <View>
+            <View style={{
+                    flexDirection: 'column',
+                    alignItems: 'center',
+                    alignContent: 'center',
+                    justifyContent: 'space-between'
+            }}>
+                
 
                 <View>
                         <Image style=
-                        {{
-                            width:288,
-                            height:288,
-                           marginTop:70,
-                           marginLeft:60,
-                           marginRight:40,
-                           marginBottom: 20,
-                            justifyContent: 'center'
-
-                        }} source={image1}></Image>
+                        {styles.img1} source={image1}></Image>
                 </View>
 
 
@@ -44,22 +41,18 @@ export function Slide1() {
                 {{
                     width:275,
                     height:204,
-                    marginTop:20,
-                    marginLeft:65,
-                    marginRight:40,
-                 
-                   
-                    justifyContent: 'center'
-
+                    marginTop:40, 
                 }} 
                 
                 source={image2}/>
 
-                </View>
+                 </View>
 
-            </View>
+                
+                    <View>
 
-            <View>
+                    </View>
+                 
 
             </View>
 
