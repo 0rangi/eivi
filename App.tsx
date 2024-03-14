@@ -1,5 +1,6 @@
 import { Dispatch, SetStateAction, useState } from 'react'
 import { Slide2 } from './src/screens/Slide2'
+import { Slide1 } from './src/screens/Slide1'
 import { StyleSheet, Text, View } from 'react-native';
 import { useFonts, PaytoneOne_400Regular } from '@expo-google-fonts/paytone-one';
 
@@ -18,9 +19,17 @@ export default function App() {
   if (!fontsLoaded) {
     return null
   }
-  return (
-    <Slide2 />
-  );
+
+switch(page){
+
+   case 1:
+    return <Slide1 setPage={setPage}/>
+    case 2:
+      return <Slide2 setPage={setPage}/>
+}
+
+
+ 
 }
 
 

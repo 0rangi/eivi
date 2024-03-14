@@ -2,8 +2,11 @@ import React from 'react'
 import { StyleSheet, Text, ImageBackground, View, Image } from 'react-native'
 import { styles } from './styles'
 import { useFonts, PaytoneOne_400Regular } from '@expo-google-fonts/paytone-one';
+import { Botao } from '../../components/botao';
+import { IPage } from '../../../App';
 
-export function Slide2() {
+
+export function Slide2({setPage}:IPage) {
     const slide = require('../../assets/eivibg2.png')
     const image2 = require('../../assets/quadro.png')
     const image1 = require('../../assets/chat.png')
@@ -40,7 +43,10 @@ export function Slide2() {
                           }} source={image2}/>
                      </View>
 
-                  <View></View>
+                  <View>
+                  <Botao onPressI={() => setPage(1)} cor={true} />
+                    <Botao onPressI={() => setPage(2)} cor={false} />
+                  </View>
                  
 
             </View>
