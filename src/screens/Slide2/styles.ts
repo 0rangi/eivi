@@ -20,8 +20,26 @@ color:"#ffffff"
 
 view:
 {
-
+    flexDirection: 'column',
+    alignItems: 'center',
+    alignContent: 'center',
+    justifyContent: 'space-between'
    
-}
+},
+
+bot:
+{
+    flexDirection: 'row',
+},
+
+img2:
+{
+    width:327,
+    height:206,
+     marginTop:30, 
+     marginBottom:20,
+   
+},
+
 
 })

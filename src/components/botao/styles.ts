@@ -3,13 +3,14 @@ import {colors} from "../../styles/globalstyle";
 
 export const styles = StyleSheet.create({
 
+    
 bola: {
 
     backgroundColor: colors.light,
     width: 30,
     height: 30,
     borderRadius:15,
-
+margin:10
 },
 
 bolaCor: {
@@ -18,7 +19,7 @@ bolaCor: {
     width: 30,
     height: 30,
     borderRadius:15,
-
+    margin:10
 }
 
 })

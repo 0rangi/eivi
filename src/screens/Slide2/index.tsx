@@ -13,12 +13,7 @@ export function Slide2({setPage}:IPage) {
     return (
         <ImageBackground style={styles.container} source={slide} >
 
-            <View style={{
-                    flexDirection: 'column',
-                    alignItems: 'center',
-                    alignContent: 'center',
-                    justifyContent: 'space-between'
-            }}>
+            <View style={styles.view}>
 
                  <View>
                     <Text style={styles.text}>
@@ -29,24 +24,22 @@ export function Slide2({setPage}:IPage) {
                 </View>
 
                 <View>
-                        <Image style= {styles.view} source={image1}></Image>
+                        <Image source={image1}></Image>
                 </View>
 
 
                      <View>
 
-                         <Image style= {{
-                             width:327,
-                             height:206,
-                              marginTop:30, 
-                              marginBottom:20,
-                          }} source={image2}/>
+                         <Image style= {styles.img2} source={image2}/>
                      </View>
 
-                  <View>
-                  <Botao onPressI={() => setPage(1)} cor={true} />
-                    <Botao onPressI={() => setPage(2)} cor={false} />
-                  </View>
+                     <View style={styles.bot}>
+                    <>
+                    <Botao onPressI={() => setPage(1)} cor={false} />
+                    <Botao onPressI={() => setPage(2)} cor={true} />
+                    </>
+
+                </View>
                  
 
             </View>

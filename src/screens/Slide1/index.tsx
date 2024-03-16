@@ -12,12 +12,7 @@ export function Slide1({ setPage }: IPage) {
     return (
         <ImageBackground style={styles.container} source={slide} >
 
-            <View style={{
-                flexDirection: 'column',
-                alignItems: 'center',
-                alignContent: 'center',
-                justifyContent: 'space-between'
-            }}>
+            <View style={styles.view}>
 
 
                 <View>
@@ -40,21 +35,20 @@ export function Slide1({ setPage }: IPage) {
 
                     <Image
                         style=
-                        {{
-                            width: 275,
-                            height: 204,
-                            marginTop: 40,
-                        }}
+                        {styles.img2}
 
                         source={image2} />
 
                 </View>
 
-
-                <View>
+ <View style={styles.bot}>
+                    <>
                     <Botao onPressI={() => setPage(1)} cor={true} />
                     <Botao onPressI={() => setPage(2)} cor={false} />
+                    </>
+
                 </View>
+               
 
 
             </View>
